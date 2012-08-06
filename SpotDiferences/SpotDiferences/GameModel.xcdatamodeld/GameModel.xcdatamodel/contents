@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50d" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DifferenceFotos" representedClassName="DifferenceFotos" syncable="YES">
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="differences" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Differences" inverseName="foto" inverseEntity="Differences" syncable="YES"/>
+        <relationship name="originalFoto" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Maze" inverseName="differenceFotos" inverseEntity="Maze" syncable="YES"/>
+    </entity>
+    <entity name="Differences" representedClassName="Differences" syncable="YES">
+        <attribute name="centerX" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="centerY" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="downrightX" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="downrightY" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="upleftX" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="upleftY" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="foto" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DifferenceFotos" inverseName="differences" inverseEntity="DifferenceFotos" syncable="YES"/>
+    </entity>
+    <entity name="Difficulty" representedClassName="Difficulty" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fotos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Maze" inverseName="dificulty" inverseEntity="Maze" syncable="YES"/>
+    </entity>
+    <entity name="Maze" representedClassName="Maze" syncable="YES">
+        <attribute name="besttimeminute" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="besttimesecund" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="expectedtimeminute" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="expectedtimesecund" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="highestscore" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personalscore" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="differenceFotos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DifferenceFotos" inverseName="originalFoto" inverseEntity="DifferenceFotos" syncable="YES"/>
+        <relationship name="dificulty" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Difficulty" inverseName="fotos" inverseEntity="Difficulty" syncable="YES"/>
+        <relationship name="theme" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Theme" inverseName="fotos" inverseEntity="Theme" syncable="YES"/>
+    </entity>
+    <entity name="Theme" representedClassName="Theme" syncable="YES">
+        <attribute name="foto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fotos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Maze" inverseName="theme" inverseEntity="Maze" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DifferenceFotos" positionX="-3485" positionY="-1854" width="128" height="105"/>
+        <element name="Differences" positionX="-3690" positionY="-1845" width="128" height="90"/>
+        <element name="Difficulty" positionX="-3240" positionY="-2025" width="128" height="75"/>
+        <element name="Maze" positionX="-3528" positionY="-2139" width="135" height="210"/>
+        <element name="Theme" positionX="-3755" positionY="-2034" width="128" height="90"/>
+    </elements>
+</model>

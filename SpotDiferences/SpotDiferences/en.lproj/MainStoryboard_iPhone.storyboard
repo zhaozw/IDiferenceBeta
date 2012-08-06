@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ZgW-tp-e3L">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Inicial View Controller - Jogo Das Diferenças-->
+        <scene sceneID="eMF-ME-mBE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMa-MK-KAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="mm2-0f-hmP" customClass="InicialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BP3-Ue-Lz2">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="zEL-Cd-gJu">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="DiferencestelaMENU.png" id="vDh-lG-vwS">
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Jogo Das Diferenças" id="qW2-Zw-TxK"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="5dN-WS-LgN" kind="push" identifier="go to dificulty" id="ASZ-Ga-QhQ"/>
+                        <segue destination="h4S-1L-SmU" kind="push" identifier="settings" id="SNr-Rg-zpk"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-504" y="-208"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="yBe-VI-0d1">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjN-HX-hkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="h4S-1L-SmU" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tUQ-Lw-wsn">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background@2x.png" id="56C-Nd-mqi">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SETTINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" id="C4G-Ti-1xC">
+                                <rect key="frame" x="87" y="58" width="307" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zer-jY-9on"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="78w-ki-53v" kind="push" identifier="settings timer" id="quP-tV-nOa"/>
+                        <segue destination="Tnj-YP-Z17" kind="push" identifier="social" id="Tfq-DA-chH"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="32" y="204"/>
+        </scene>
+        <!--Social Settings View Controller-->
+        <scene sceneID="vJi-Yv-fmm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OFO-I8-j81" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Tnj-YP-Z17" customClass="SocialSettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ovv-16-HwU">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background@2x.png" id="OZq-Wf-VT1">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SOCIAL NETWORK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="31" id="oWT-v3-9DC">
+                                <rect key="frame" x="87" y="58" width="307" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Facebook Auto Post" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" id="Vsa-Aw-E1r">
+                                <rect key="frame" x="54" y="139" width="186" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="p66-DA-GUD">
+                                <rect key="frame" x="297" y="139" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ceT-PR-B3a"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="facebookAutoPost" destination="p66-DA-GUD" id="TYO-HL-lkV"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="405" y="653"/>
+        </scene>
+        <!--Theme View Controller - Choose Theme-->
+        <scene sceneID="KKC-Wf-pZG">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mw7-bY-I9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="1Uu-oz-xSc" customClass="ThemeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iin-dt-QNd">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose Theme" id="2ls-tU-Ism"/>
+                    <connections>
+                        <segue destination="tzb-RF-Vc1" kind="push" identifier="show fotos for theme" id="3hd-9A-Kjf"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="650" y="-208"/>
+        </scene>
+        <!--Settings Timer View Controller-->
+        <scene sceneID="l1S-3X-FE4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQK-4A-1K9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="78w-ki-53v" customClass="SettingsTimerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rNs-Kf-Jgl">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background@2x.png" id="6Fo-7q-agL">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SET THE TIMER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aII-PE-s8K">
+                                <rect key="frame" x="87" y="58" width="307" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Automatically Extends Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="nAg-AF-hWg">
+                                <rect key="frame" x="239" y="123" width="134" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="3lo-wG-CV8">
+                                <rect key="frame" x="381" y="123" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v59-aF-HMp"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="autoExtendsTime" destination="3lo-wG-CV8" id="cnG-dn-9r4"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="623" y="204"/>
+        </scene>
+        <!--Images For Theme Carousel View Controller - Choose Photo-->
+        <scene sceneID="dQp-FX-OFQ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5CU-jd-msJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="tzb-RF-Vc1" customClass="ImagesForThemeCarouselViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bjO-2j-oC6">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose Photo" id="bwH-r2-Zz4"/>
+                    <connections>
+                        <segue destination="eOX-OG-IEl" kind="push" identifier="show detail view" id="eOd-Q1-YDH"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1219" y="-208"/>
+        </scene>
+        <!--Image Detail View Controller-->
+        <scene sceneID="edi-XZ-exC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTR-9i-XnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="eOX-OG-IEl" customClass="ImageDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eGn-Ci-V7w">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background@2x.png" id="ZX3-FN-QZr">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="NUNO CORREIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" id="jkl-gN-g3m">
+                                <rect key="frame" x="48" y="20" width="384" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x1F-gB-nVe">
+                        <barButtonItem key="rightBarButtonItem" title="Play" id="JGf-S2-cPX"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="mazeDetail" destination="jkl-gN-g3m" id="7x3-9f-g5z"/>
+                        <segue destination="2" kind="push" identifier="start game" id="Eg7-gX-B7w"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1840" y="-208"/>
+        </scene>
+        <!--Difficulty View Controller - Dificuldade-->
+        <scene sceneID="IT4-8e-pZV">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTH-qg-1hS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="5dN-WS-LgN" customClass="DifficultyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qjY-JX-8zF">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="level_bg.png" id="deq-jg-4IF">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dificuldade" id="bpR-Ng-bBk"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="1Uu-oz-xSc" kind="push" identifier="choose theme" id="dyn-D1-aGS"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="93" y="-208"/>
+        </scene>
+        <!--Game View Controller - Game-->
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="GameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="redraw" id="3">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" bounces="NO" maximumZoomScale="0.0" bouncesZoom="NO" id="SMA-va-epS" userLabel="rightScrollView">
+                                <rect key="frame" x="245" y="29" width="235" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" id="gUB-PJ-Bee" userLabel="rightImageView" customClass="MazeView">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="271"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" bounces="NO" maximumZoomScale="0.0" bouncesZoom="NO" id="fls-Dc-nHd" userLabel="leftScrollView">
+                                <rect key="frame" x="0.0" y="29" width="235" height="271"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" id="pQ3-Ss-UTz" userLabel="leftImageView" customClass="MazeView">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="271"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game" id="ki7-lA-WeV"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="leftImageView" destination="pQ3-Ss-UTz" id="UQ1-Vt-PRf"/>
+                        <outlet property="leftScrollView" destination="fls-Dc-nHd" id="Bz8-Iz-HYZ"/>
+                        <outlet property="rightImageView" destination="gUB-PJ-Bee" id="CoG-uO-EIr"/>
+                        <outlet property="rightScrollView" destination="SMA-va-epS" id="N2w-py-WdW"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2388" y="-208"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="AqJ-QW-8cO">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1Y-MZ-gBG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="6Cs-j3-bIU" customClass="SplashViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dpq-Za-umP">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="8Ck-Fo-duq">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x7U-2m-gcp"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imageview" destination="8Ck-Fo-duq" id="22L-m4-QT1"/>
+                        <segue destination="mm2-0f-hmP" kind="push" identifier="show inicial view" id="CWz-Ca-hat"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1112" y="-202"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ws5-i3-biA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8rf-3X-jf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="ZgW-tp-e3L" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="xOc-42-NZA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Cs-j3-bIU" kind="relationship" relationship="rootViewController" id="Wkd-bF-56n"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1696" y="-202"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DiferencestelaMENU.png" width="960" height="640"/>
+        <image name="background@2x.png" width="960" height="480"/>
+        <image name="level_bg.png" width="960" height="640"/>
+    </resources>
+    <classes>
+        <class className="DifficultyViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DifficultyViewController.h"/>
+        </class>
+        <class className="GameViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="leftImageView" candidateClass="MazeView"/>
+                <relationship kind="outlet" name="leftScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="navigationBar" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="rightImageView" candidateClass="MazeView"/>
+                <relationship kind="outlet" name="rightScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="slider" candidateClass="UIProgressView"/>
+            </relationships>
+        </class>
+        <class className="ImageDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="besttime" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="document" candidateClass="UIManagedDocument"/>
+                <relationship kind="outlet" name="expectedtime" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="highestscore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageview" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mazeDetail" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="personalscore" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ImagesForThemeCarouselViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImagesForThemeCarouselViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="navItem" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="pagecontrol" candidateClass="UIPageControl"/>
+            </relationships>
+        </class>
+        <class className="InicialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InicialViewController.h"/>
+        </class>
+        <class className="MazeView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MazeView.h"/>
+        </class>
+        <class className="SettingsTimerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsTimerViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="autoExtendsTime" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+        <class className="SettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+        </class>
+        <class className="SocialSettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialSettingsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="facebookAutoPost" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+        <class className="SplashViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SplashViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageview" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ThemeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThemeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="document" candidateClass="UIManagedDocument"/>
+                <relationship kind="outlet" name="navItem" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="pagecontrol" candidateClass="UIPageControl"/>
+            </relationships>
+        </class>
+        <class className="UIDocument" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIDocument.h"/>
+        </class>
+        <class className="UIManagedDocument" superclassName="UIDocument">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIManagedDocument.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
